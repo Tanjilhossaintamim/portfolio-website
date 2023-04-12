@@ -168,7 +168,7 @@ p {
     color: white;
 }
 .description p a:hover{
-    color: darkblue;
+    color: rgb(116, 139, 0);
 
 }
 .solid-hr{
