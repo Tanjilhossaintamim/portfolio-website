@@ -1,0 +1,479 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+/* navbar start here */
+
+.navbar {
+    text-align: center;
+
+    padding: 20px 0px;
+    background-color: rgb(47, 6, 143);
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; */
+}
+
+.title {
+    margin: 0;
+    padding-top: 10px;
+
+}
+
+.title h1 {
+    color: white;
+    margin: 0;
+    font-size: 35px;
+}
+
+.nav-manu {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav-manu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px;
+    background-color: rgb(14, 12, 54);
+    margin: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-manu a:hover {
+    background-color: grey;
+}
+
+[class*='col-'] {
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile */
+[class*='col-'] {
+    width: 100%;
+}
+
+.navbar::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+/* navbar end here */
+/* profile start here */
+
+.profile {
+    text-align: center;
+    padding: 130px 20px;
+    position: relative;
+
+}
+
+.top-icon {
+    position: absolute;
+    right: 60px;
+    top: 40px;
+    transition: transform 2s;
+
+}
+.top-icon:hover{
+    transform: rotate(360deg);
+}
+
+.bottom-icon {
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    transition: transform 2s;
+}
+.bottom-icon:hover{
+    transform: rotate(360deg);
+}
+
+
+.profile-dec p{
+    text-align: center;
+    margin: 0 auto 20px auto;
+    width: 90%;
+    color: grey;
+}
+.profile-dec>h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+}
+
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* profile end here */
+/* about section start here  */
+.about{
+    text-align: center;
+    background-color: rgb(38, 72, 73);
+    color: white;
+    padding: 50px 10px;
+}
+.about h1{
+    padding: 30px 10px 0px 10px;
+
+}
+.dottad-hr{
+    width: 100px;
+    border: 2px dotted ;
+    border-bottom: 0;
+
+}
+
+    
+
+
+.img img{
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(217, 219, 217);
+    border-radius: 50%;
+
+
+}
+.description{
+    text-align: center;
+}
+.description p{
+    text-align: center;
+}
+.description p a{
+    text-decoration: none;
+    color: white;
+}
+.description p a:hover{
+    color: darkblue;
+
+}
+.solid-hr{
+    width: 100%;
+}
+.description button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(87, 1, 28);
+    color: white;
+    border: none;
+}
+.description button:hover{
+    background-color: rgba(147, 12, 55, 0.669);
+}
+.about::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* about section end here  */
+
+
+/* expreince section start here  */
+.expreince{
+    margin: 50px 50px;
+
+
+}
+
+.card{
+    text-align: center;
+    background-color: rgb(140, 155, 155);
+    padding: 50px 50px;
+    border-radius: 10px;
+    margin: 10px 20px;
+    box-shadow: 4px 4px 4px black;
+    transition: transform 1s;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card-description ol{
+    text-align: left;
+
+}
+.card-icon img{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+
+}
+.card-title h2{
+    background-color: rgb(78, 63, 63);
+    color: white;
+    padding: 5px 0;
+}
+
+
+.skills::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.skiill-container{
+    margin-left: 0;
+}
+.skiill-container li{
+    list-style: none;
+    text-align: left;
+    margin: 30px 0;
+    position: relative;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.skiill-container li::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    top: calc(100% + 5px);
+    background-color: #E9ECEF;
+    border-radius: 1000px;
+}
+.skiill-container li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 15px;
+    top: calc(100% + 5px);
+    left: 0;
+    border-bottom-left-radius: 1000px;
+    border-top-left-radius:1000px ;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+}
+.skiill-container li.html::after{
+    animation-name: html;
+}
+.skiill-container li.css::after{
+    animation-name: css;
+}
+.skiill-container li.bootstrap::after{
+    animation-name: bootstrap;
+}
+.skiill-container li.javascript::after{
+    animation-name: javascript;
+}
+.skiill-container li.python::after{
+    animation-name: python;
+}
+.skiill-container li.django::after{
+    animation-name: django;
+}
+@keyframes html {
+    to{
+        width: 80%;
+        background-color: #F16529;
+    }
+    
+}
+@keyframes css {
+    to{
+        width: 70%;
+        background-color: #254BDD;
+    }
+    
+}
+@keyframes python {
+    to{
+        width: 65%;
+        background-color: #FFC32F;
+    }
+    
+}
+@keyframes javascript {
+    to{
+        width: 20%;
+        background-color: #F0DB4F;
+    }
+    
+}
+@keyframes bootstrap {
+    to{
+        width: 55%;
+        background-color: #870AFB;
+    }
+    
+}
+@keyframes django {
+    to{
+        width: 60%;
+        background-color: #065637;
+    }
+    
+}
+.skiill-container::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.expreince::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* expreince section end here  */
+
+
+/* achivement section start here  */
+.achivement-contact{
+    padding: 1% 7%;
+    background-color: rgb(65, 63, 97);
+}
+.achivement-contact::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+.achivement{
+    text-align: center;
+    color: whitesmoke;
+}
+.contact-form{
+    text-align: center;
+    color: white;
+}
+.contact-form h1{
+    color: whitesmoke;
+}
+form{
+    position: relative;
+}
+form p{
+    text-align: center;
+}
+input{
+   padding: 5px 30px;
+   text-align: center;
+   width: 60%;
+}
+textarea{
+    resize: none;
+    text-align: center;
+    width: 60%;
+}
+form button{
+    width: 80px;
+    padding: 10px 16px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(19, 4, 7);
+    color: white;
+    cursor: pointer;
+}
+/* achivement section end here  */
+
+footer{
+    text-align: center;
+    background-color: rgb(42, 36, 36);
+    height: 13vh;
+}
+.social-icon{
+    text-align: center;
+}
+footer a{
+    font-size: 2.5rem;
+    padding: 20px 15px;
+    
+}
+
+footer a i{
+    padding:10px 10px;
+    color: white;
+}
+
+/* media section start here  */
+
+@media only screen and (min-width:601px) and (max-width:991px) {
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .nav-manu {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .nav-manu a {
+        background-color: transparent;
+    }
+}
