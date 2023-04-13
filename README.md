@@ -1,2 +1,2 @@
 # portfolio-website
-this is simple portfolio website , i used only html and css
+this is simple portfolio website , i used only html and css for this project
