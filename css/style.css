@@ -355,6 +355,13 @@ p {
     text-align: center;
     color: whitesmoke;
 }
+.map{
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: 3px solid black;
+}
 .achivement p{
     text-align: left;
 }
