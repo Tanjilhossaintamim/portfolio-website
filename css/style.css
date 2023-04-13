@@ -19,13 +19,9 @@ p {
 
 .navbar {
     text-align: center;
-
     padding: 20px 0px;
     background-color: rgb(47, 6, 143);
-    /* position: fixed;
-    top: 0;
-    right: 0;
-    left: 0; */
+    
 }
 
 .title {
@@ -94,9 +90,6 @@ p {
     transition: transform 2s;
 
 }
-.top-icon:hover{
-    transform: rotate(360deg);
-}
 
 .bottom-icon {
     position: absolute;
@@ -104,10 +97,13 @@ p {
     bottom: 60px;
     transition: transform 2s;
 }
-.bottom-icon:hover{
+
+.profile:hover .top-icon{
     transform: rotate(360deg);
 }
-
+.profile:hover .bottom-icon{
+    transform: rotate(360deg);
+}
 
 .profile-dec p{
     text-align: center;
@@ -126,8 +122,9 @@ p {
     clear: both;
 }
 
-
 /* profile end here */
+
+
 /* about section start here  */
 .about{
     text-align: center;
@@ -145,9 +142,6 @@ p {
     border-bottom: 0;
 
 }
-
-    
-
 
 .img img{
     width: 200px;
@@ -198,7 +192,7 @@ p {
 
 /* expreince section start here  */
 .expreince{
-    margin: 50px 50px;
+    margin: 50px 0px;
 
 
 }
@@ -348,6 +342,7 @@ p {
 /* achivement section start here  */
 .achivement-contact{
     padding: 1% 7%;
+    padding-top: 7%;
     background-color: rgb(65, 63, 97);
 }
 .achivement-contact::after{
@@ -385,7 +380,8 @@ textarea{
 form button{
     width: 80px;
     padding: 10px 16px;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     border-radius: 5px;
     border: none;
     background-color: rgb(19, 4, 7);
@@ -396,15 +392,23 @@ form button{
 
 footer{
     text-align: center;
-    background-color: rgb(42, 36, 36);
+    background-color: #24292F;
     height: 13vh;
+    position: relative;
+
 }
 .social-icon{
     text-align: center;
+    background-color: #24292F;
+
+    position: absolute;
+    top: 20px;
+    left: 100px;
+
 }
 footer a{
-    font-size: 2.5rem;
-    padding: 20px 15px;
+    font-size: 1.5rem;
+    padding: 10px 8px;
     
 }
 
@@ -412,6 +416,23 @@ footer a i{
     padding:10px 10px;
     color: white;
 }
+footer a .fb{
+    color: #254BDD;
+}
+footer a .li{
+    color: #5e7aea;
+}
+footer a .git{
+    color: #E9ECEF;
+}
+footer a .you{
+    color: red;
+}
+.copyrightsymbol{
+    color: white;
+    display: none;
+}
+
 
 /* media section start here  */
 
