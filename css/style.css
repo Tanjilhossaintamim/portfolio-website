@@ -355,6 +355,9 @@ p {
     text-align: center;
     color: whitesmoke;
 }
+.achivement p{
+    text-align: left;
+}
 .contact-form{
     text-align: center;
     color: white;
@@ -388,6 +391,10 @@ form button{
     background-color: rgb(19, 4, 7);
     color: white;
     cursor: pointer;
+    transition: 1s;
+}
+form button:hover{
+    background-color:rgba(19, 4, 7, 0.687) ;
 }
 /* achivement section end here  */
 
@@ -497,5 +504,12 @@ footer a .you{
 
     .nav-manu a {
         background-color: transparent;
+    }
+    .navbar{
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
     }
 }
