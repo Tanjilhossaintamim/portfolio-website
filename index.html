@@ -9,7 +9,9 @@
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display:ital@1&family=Work+Sans&display=swap"
+        rel="stylesheet">
     <!-- font awsome link  -->
     <script src="https://kit.fontawesome.com/6da7043c56.js" crossorigin="anonymous"></script>
     <!-- bootstrap link -->
@@ -21,16 +23,17 @@
 <body>
     <!-- header section start here  -->
     <header id="home">
-        <nav class="navbar navbar-expand-lg mynavbar">
+        <nav class="navbar navbar-expand-lg mynavbar fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./images/letter-t-.png" alt="logo" class="logo">
+                    <img src="./images/letter-t-.png" alt="logo" class="logo img-fluid">
                 </a>
-                <!-- <h2 class="mr-5 title">Tanjil Hossain</h2> -->
+
                 <button class="navbar-toggler bg-secondary text-dark " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                    
                 </button>
                 <div class="collapse navbar-collapse navlink ms-auto ms-lg-auto" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto  mynavlink ">
@@ -55,22 +58,21 @@
                 </div>
             </div>
         </nav>
+        <div class="row d-flex justify-content-center mainprofile">
+            <div class="profile d-flex justify-content-center">
+                <img class="top-icon" src="./images/cloudy.png" alt="weatehr icon" width="60" height="60">
+                <div class="profile-dec  text-center">
+                    <h1>Hi , I am Tanjil</h1><br>
+                    <p>I am a fullstuck web developer and python programmer from bangladesh. </p>
+                    <p>I use react for frontend end django for backend.</p>
+                </div>
+                <img class="bottom-icon" src="./images/cloudy.png" alt="weatehr icon" width="60" height="60">
+
+            </div>
+        </div>
     </header>
     <!-- header section end here  -->
-    <!-- profile section start  -->
-    <section id="profile">
-        <div class="profile">
-            <img class="top-icon" src="./images/cloudy.png" alt="weatehr icon" width="60" height="60">
-            <div class="profile-dec">
-                <h1>Hi , I am Tanjil</h1><br>
-                <p>I am a fullstuck web developer and python programmer from bangladesh. </p>
-                <p>I use react for frontend end django for backend.</p>
-            </div>
-            <img class="bottom-icon" src="./images/cloudy.png" alt="weatehr icon" width="60" height="60">
 
-        </div>
-    </section>
-    <!-- profile section end  -->
 
     <!-- about section start  -->
     <section id="about">
@@ -103,11 +105,10 @@
     <section id="skill">
         <h1 class="skill-title">My Skills</h1><br>
 
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="row d-flex justify-content-center">
 
-        <div class="container-fluid">
-            <div class="row">
-
-                <div class="card col-4">
+                <div class="card col-4 col-s-6">
                     <div class="box">
                         <div class="percent">
                             <svg>
@@ -122,7 +123,7 @@
                     </div>
 
                 </div>
-                <div class="card col-4">
+                <div class="card col-4 col-s-6">
                     <div class="box">
                         <div class="percent">
                             <svg>
@@ -137,7 +138,7 @@
                     </div>
 
                 </div>
-                <div class="card col-4">
+                <div class="card col-4 col-s-6">
                     <div class="box">
                         <div class="percent">
                             <svg>
@@ -155,7 +156,7 @@
                 </div>
 
 
-                <div class="card col-4">
+                <div class="card col-4 col-s-6">
                     <div class="box">
                         <div class="percent">
                             <svg>
@@ -171,7 +172,7 @@
 
 
                 </div>
-                <div class="card col-4">
+                <div class="card col-4 col-s-6">
                     <div class="box">
                         <div class="percent">
                             <svg>
@@ -188,7 +189,7 @@
 
                 </div>
 
-                <div class="card col-4">
+                <div class="card col-4 ">
                     <div class="box">
                         <div class="percent">
                             <svg>
@@ -297,6 +298,14 @@
     <!-- testmonial section start  -->
     <section id="testmonial">
         <div id="carouselExampleInterval" class="carousel slide testcarousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
             <h1 class="text-center t-heading">" Testmonials "</h1>
             <div class="carousel-inner text-center">
                 <div class="carousel-item active text-center" data-bs-interval="10000">
@@ -305,8 +314,9 @@
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, enim Lorem ipsum dolor
                                 sit amet consectetur adipisicing elit. Molestias, similique..</p>
                         </div>
-                        <img src="./images/me.jpg" alt="tamim" class="img-fluid testmonialimg">
-                        <h5 class="pt-3">Tamim</h5>
+                        <img src="./testmonial/naim-ahmad-picture-min-13642e07.jpg" alt="tamim"
+                            class="img-fluid testmonialimg">
+                        <h5 class="pt-3">Naim Ahmad (webdeveloper)</h5>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
@@ -315,8 +325,9 @@
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, enim Lorem ipsum dolor
                                 sit amet consectetur adipisicing elit. Molestias, similique..</p>
                         </div>
-                        <img src="./images/me.jpg" alt="tamim" class="img-fluid testmonialimg">
-                        <h5 class="pt-3">Tamim</h5>
+                        <img src="./testmonial/christian-buehner-DItYlc26zVI-unsplash.jpg" alt="tamim"
+                            class="img-fluid testmonialimg">
+                        <h5 class="pt-3">Jhon Smith (Softwar Engineer google)</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -325,21 +336,13 @@
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, enim Lorem ipsum dolor
                                 sit amet consectetur adipisicing elit. Molestias, similique..</p>
                         </div>
-                        <img src="./images/me.jpg" alt="tamim" class="img-fluid testmonialimg">
-                        <h5 class="pt-3">Tamim</h5>
+                        <img src="./testmonial/brooke-cagle-WHWYBmtn3_0-unsplash.jpg" alt="melisa"
+                            class="img-fluid testmonialimg">
+                        <h5 class="pt-3">Melisa (Sweeden)</h5>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+
         </div>
 
 
@@ -353,7 +356,7 @@
         <h1 class="text-center  p-5 pt-5 contactheading">Contact Me</h1>
         <span class="text-center">I always like to connect with new people. you can contact me to give me some better
             suggestion or get any better suggestion.</span>
-        <div class="container-fluid pt-3">
+        <div class="container-fluid pt-3 d-flex justify-content-center">
             <div class="row">
                 <div class="col map mb-4 d-flex justify-content-center">
                     <iframe
@@ -363,6 +366,7 @@
                 </div>
                 <div class="col col-m-12 contact-form justify-content-center mt-2">
                     <form action="mailto:tanjilhossain845@gmail.com" method="post" enctype="text/plain">
+
                         <p><input type="text" class="form-control text-center" id="exampleFormControlInput1"
                                 placeholder="Enter Your Name" required></p>
                         <p><input type="email" class="form-control  text-center" id="exampleFormControlInput1"
