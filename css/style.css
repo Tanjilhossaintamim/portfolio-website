@@ -603,6 +603,18 @@ footer {
         width: 298px;
         margin-bottom: 20px;
     }
+    .contactheading{
+        font-size: 40px;
+    }
+    .skill-title{
+        font-size: 40px;
+    }
+    .portfolio-heading{
+        font-size: 40px;
+    }
+    .title-heading{
+        font-size: 40px;
+    }
 
 }
 
