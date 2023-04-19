@@ -535,6 +535,10 @@ svg circle:nth-child(2) {
 footer{
     max-width: 100%;
     background-color: #161B22;
+    padding: 10px 5px;
+}
+.copyrightcol{
+    text-align: right;
 }
 .fb,.you,.li,.git{
     margin-right: 10px;
