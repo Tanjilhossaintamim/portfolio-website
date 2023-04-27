@@ -34,24 +34,24 @@
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    
+
                 </button>
                 <div class="collapse navbar-collapse navlink ms-auto ms-lg-auto" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto  mynavlink ">
                         <li class="nav-item">
-                            <a class="nav-link nlink" aria-current="page" href="#">Home</a>
+                            <a id="nav1" class="nav-link nlink" aria-current="page" href="#" onclick="fn()">Home</a>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link nlink" href="#about">About</a>
+                        <li  class="nav-item ">
+                            <a id="nav2" class="nav-link nlink" href="#about" onclick="fn1()">About</a>
                         </li>
-                        <li class="nav-item nlink">
-                            <a class="nav-link nlink" href="#skill">Skills</a>
-                        </li>
-                        <li class="nav-item nlink">
-                            <a class="nav-link nlink" href="#portfolio">Portfolio</a>
+                        <li  class="nav-item nlink">
+                            <a id="nav3" class="nav-link nlink" href="#skill" onclick="fn2()">Skills</a>
                         </li>
                         <li class="nav-item nlink">
-                            <a class="nav-link nlink" href="#contact">Contact</a>
+                            <a id="nav4" class="nav-link nlink" href="#portfolio" onclick="fn3()">Portfolio</a>
+                        </li>
+                        <li class="nav-item nlink">
+                            <a id="nav5" class="nav-link nlink" href="#contact" onclick="fn4()">Contact</a>
                         </li>
 
                     </ul>
@@ -64,7 +64,7 @@
                 <img class="top-icon" src="./images/cloudy.png" alt="weatehr icon" width="60" height="60">
                 <div class="profile-dec  text-center">
                     <h1>Hi , I am Tanjil</h1><br>
-                    <p>I am a fullstuck web developer and python programmer from bangladesh. </p>
+                    <p>I am a fullstack web developer and python programmer from bangladesh. </p>
                     <p>I use react for frontend end django for backend.</p>
                 </div>
                 <img class="bottom-icon" src="./images/cloudy.png" alt="weatehr icon" width="60" height="60">
@@ -165,7 +165,7 @@
                                 <circle cx="70" cy="70" r="70"></circle>
                             </svg>
                             <div class="number">
-                                <h2>20<span>%</span></h2>
+                                <h2>60<span>%</span></h2>
                             </div>
                         </div>
                         <h2 class="text">JavaScript</h2>
@@ -181,7 +181,7 @@
                                 <circle cx="70" cy="70" r="70"></circle>
                             </svg>
                             <div class="number">
-                                <h2>60<span>%</span></h2>
+                                <h2>65<span>%</span></h2>
                             </div>
                         </div>
                         <h2 class="text">Python</h2>
@@ -250,8 +250,10 @@
                                             href="http://universityofoxford.netlify.app/" target="_blank">Live Site</a>
                                     </p>
                                     <div class="webicon text-center">
-                                        <abbr title="Github"><a href="https://github.com/Tanjilhossaintamim/university-of-oxford" target="_blank"><i
-                                            class="fa-brands fa-github githubicon"></i></a></abbr>
+                                        <abbr title="Github"><a
+                                                href="https://github.com/Tanjilhossaintamim/university-of-oxford"
+                                                target="_blank"><i
+                                                    class="fa-brands fa-github githubicon"></i></a></abbr>
                                         </a>
                                     </div>
                                 </div>
@@ -274,8 +276,10 @@
                                             href="http://universityofoxford.netlify.app/" target="_blank">Live Site</a>
                                     </p>
                                     <div class="webicon text-center">
-                                        <abbr title="Github"><a href="https://github.com/Tanjilhossaintamim/university-of-oxford" target="_blank"><i
-                                            class="fa-brands fa-github githubicon"></i></a></abbr>
+                                        <abbr title="Github"><a
+                                                href="https://github.com/Tanjilhossaintamim/university-of-oxford"
+                                                target="_blank"><i
+                                                    class="fa-brands fa-github githubicon"></i></a></abbr>
                                     </div>
                                 </div>
                             </div>
@@ -338,7 +342,7 @@
                         </div>
                         <img src="./testmonial/brooke-cagle-WHWYBmtn3_0-unsplash.jpg" alt="melisa"
                             class="img-fluid testmonialimg">
-                        <h5 class="pt-3">Melisa (Sweeden)</h5>
+                        <h5 class="pt-3">Melisa (Sweden)</h5>
                     </div>
                 </div>
             </div>
@@ -415,6 +419,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="app.js"></script>
 
 </body>
 
