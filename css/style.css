@@ -17,10 +17,18 @@ html {
 
 header {
     background-color: #060047;
+    max-width: 100%;
+    height: 100vh;
 
 }
 
 .mynavbar {
+    background-color: #060047;
+    transition: .5s ease-in-out;
+
+
+}
+.nvbar{
     background-color: #191825;
 
 }
@@ -63,12 +71,14 @@ header {
 
 .mainprofile {
     margin-top: 70px;
+    
 }
 
 .profile {
     text-align: center;
     padding: 130px 20px;
     position: relative;
+    margin-top: 20px;
 
 }
 
@@ -371,21 +381,26 @@ svg circle:nth-child(2) {
 }
 
 .card:nth-child(3) svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440*55) /100);
+    stroke-dashoffset: calc(440 - (440*70) /100);
     stroke: #890AFC;
 }
 
 .card:nth-child(4) svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440*60) /100);
-    stroke: #FFC928;
+    stroke-dashoffset: calc(440 - (440*65) /100);
+    stroke: #28a5ff;
 }
 
 .card:nth-child(5) svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440*65) /100);
-    stroke: rgb(255, 0, 140);
+    stroke-dashoffset: calc(440 - (440*60) /100);
+    stroke: #FFC928;
+    
 }
 
 .card:nth-child(6) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440*65) /100);
+    stroke: rgb(255, 0, 140);
+}
+.card:nth-child(7) svg circle:nth-child(2) {
     stroke-dashoffset: calc(440 - (440*50) /100);
     stroke: rgb(143, 214, 0);
 }

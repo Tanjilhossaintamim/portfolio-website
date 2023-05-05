@@ -43,6 +43,18 @@ let fn4 = () => {
     link4.style.color = '#fff';
     link2.style.color = '#fff';
 }
+
+document.addEventListener('scroll',navbar)
+function navbar(){
+    const mynavbar=document.querySelector('nav');
+    if (window.scrollY>0){
+        mynavbar.classList.add('nvbar');
+    
+    }
+    else{
+        mynavbar.classList.remove('nvbar');
+    }
+}
 // nav link javascript code end 
 
 
